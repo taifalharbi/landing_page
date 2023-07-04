@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manipulating the DOM</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main__hero">
+        <h1>Innovative solutions</h1>
+      </header>
+      <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section id="section1" data-nav="Section 1">
+        <div class="landing__container">
+          <h2>Welcome ! </h2>
+          <p>
+            Welcome to our innovative solutions platform that will revolutionize your business and give you a competitive edge.
+             We understand that running a successful business requires continuous improvement, and we are here to help you achieve that. 
+            Our platform offers a wide range of innovative solutions that are tailored to meet your business needs, whether you are a startup or an established business.
+          </p>
+        </div>
+      </section>
+      <section id="section2" data-nav="Section 2">
+        <div class="landing__container">
+          <h2>Our Innovative Solutions</h2>
+          <p>
+            Our platform provides a range of innovative solutions that cover different aspects of your business.
+             From automating your operations to enhancing your online presence, we have got you covered.
+              Our solutions are designed to help you streamline your processes, reduce your costs, and improve your overall efficiency.
+             We work closely with our clients to understand their unique needs and provide customized solutions that meet their business goals.
+          </p>
+        </div>
+      </section>
+      <section id="section3" data-nav="Section 3">
+        <div class="landing__container">
+          <h2>Why Choose Us?</h2>
+          <p>
+            We are passionate about helping businesses succeed, and we take pride in our ability to deliver innovative solutions that work.
+             Our team is made up of experienced professionals who are committed to providing excellent customer service and support.
+              We work closely with our clients to ensure that we understand their needs and provide solutions that meet their goals. 
+            We are dedicated to building long-term relationships with our clients and helping them achieve their business objectives.
+          </p>
+        </div>
+      </section>
+      <section id="section4" data-nav="Section 4">
+        <div class="landing__container">
+          <h2>Get Started Today</h2>
+          <p>
+            Are you ready to revolutionize your business with our innovative solutions? We are here to help you every step of the way.
+   Getting started is easy, simply contact us today to schedule a consultation with one of our experts.
+    We will work with you to understand your needs and provide customized solutions that will help you achieve your business goals. 
+    Join our growing list of satisfied clients and experience the benefits of our innovative solutions.
+          </p>
+        </div>
+      </section>
+      <button id="go-top-button">Go Top</button>
+
+    </main>
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
